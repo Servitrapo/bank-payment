@@ -2,16 +2,15 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl
 
 from odoo import fields
-from odoo.tests.common import Form, TransactionCase
+from odoo.tests import Form
 
-from odoo.addons.base.tests.common import DISABLED_MAIL_CONTEXT
+from odoo.addons.base.tests.common import BaseCommon
 
 
-class TestAccountPaymentOrder(TransactionCase):
+class TestAccountPaymentOrder(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.env = cls.env(context=dict(cls.env.context, **DISABLED_MAIL_CONTEXT))
         cls.partner = cls.env["res.partner"].create({"name": "Test Partner"})
         cls.product = cls.env["product.product"].create({"name": "Test product"})
         cls.partner_bank_core = cls._create_res_partner_bank("N-CORE")
