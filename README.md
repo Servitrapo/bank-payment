@@ -32,11 +32,11 @@ addon | version | maintainers | summary
 [account_payment_mode_default_account](account_payment_mode_default_account/) | 14.0.1.0.0 |  | Set Receivable or Payable account according to payment mode
 [account_payment_order](account_payment_order/) | 14.0.2.5.7 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 14.0.1.0.2 |  | Account Payment Order - Generate grouped moves
-[account_payment_order_lock_draft](account_payment_order_lock_draft/) | 14.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![kaynnan](https://github.com/kaynnan.png?size=30px)](https://github.com/kaynnan) | Account Payment Order Lock Draft
-[account_payment_order_notification](account_payment_order_notification/) | 14.0.1.6.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
+[account_payment_order_lock_draft](account_payment_order_lock_draft/) | 14.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> <a href='https://github.com/kaynnan'><img src='https://github.com/kaynnan.png' width='32' height='32' style='border-radius:50%;' alt='kaynnan'/></a> | Account Payment Order Lock Draft
+[account_payment_order_notification](account_payment_order_notification/) | 14.0.1.6.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
 [account_payment_order_return](account_payment_order_return/) | 14.0.1.0.2 |  | Account Payment Order Return
 [account_payment_order_sequence_payment_mode](account_payment_order_sequence_payment_mode/) | 14.0.1.0.0 |  | Account Payment Order Sequence Payment Mode
-[account_payment_order_tier_validation](account_payment_order_tier_validation/) | 14.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Extends the functionality of Payment Orders to support a tier validation process.
+[account_payment_order_tier_validation](account_payment_order_tier_validation/) | 14.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Extends the functionality of Payment Orders to support a tier validation process.
 [account_payment_order_vendor_email](account_payment_order_vendor_email/) | 14.0.2.0.0 |  | Account Payment Order Email
 [account_payment_partner](account_payment_partner/) | 14.0.1.7.2 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 14.0.1.0.5 |  | Adds Bank Account and Payment Mode on Purchase Orders
