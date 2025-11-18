@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_payment_mode](account_payment_mode/) | 19.0.1.0.0 |  | Adds payment mode on partners and invoices
+[account_payment_order](account_payment_order/) | 19.0.1.0.0 |  | Account Payment Order
 
 [//]: # (end addons)
 
