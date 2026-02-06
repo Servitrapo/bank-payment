@@ -66,10 +66,29 @@ If your country requires several identifiers (like Spain), you must:
 #. Fill the specific identifiers on the fields "Initiating Party Identifier"
    and "Initiating Party Issuer".
 
+#. When configuring a SEPA Credit Transfer payment method, you can choose the
+   PAIN format version to use.
+
+   Starting from this version, **PAIN.001.001.09** is available and is
+   *recommended for credit transfers*, as it complies with the newer EPC
+   requirements regarding postal address structure.
+
+   During upgrade, existing **SEPA Credit Transfer** payment methods that still
+   use an older **pain.001.001.03** format are **migrated automatically** to
+   **PAIN.001.001.09** to avoid generating files that may be rejected by banks.
+   You can still change the PAIN version afterwards if your bank requires a
+   different one.
+
 Usage
 =====
 
 See 'readme' files of the OCA/bank-payment suite.
+
+Known issues / Roadmap
+======================
+
+- Extend the PAIN.001.001.09 postal address handling to SEPA Direct Debit (SDD)
+  in the related module `account_banking_sepa_direct_debit`
 
 Bug Tracker
 ===========
@@ -90,6 +109,7 @@ Authors
 * Akretion
 * Noviat
 * Tecnativa
+* Therp BV
 
 Contributors
 ~~~~~~~~~~~~
@@ -109,6 +129,10 @@ Contributors
 
   * Pedro M. Baeza
   * Carlos Roca
+
+* `Therp BV <https://www.therp.nl>`_:
+  
+  * Nikos Tsirintanis <ntsirintanis@therp.nl>
 
 Maintainers
 ~~~~~~~~~~~
