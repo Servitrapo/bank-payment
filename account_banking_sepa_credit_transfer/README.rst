@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 ====================================
 Account Banking SEPA Credit Transfer
 ====================================
@@ -17,7 +13,7 @@ Account Banking SEPA Credit Transfer
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fbank--payment-lightgray.png?logo=github
@@ -64,10 +60,35 @@ This module is part of the OCA/bank-payment suite.
 Configuration
 =============
 
-- Create a Payment Mode dedicated to SEPA Credit Transfer.
-- Select the Payment Method *SEPA Credit Transfer to suppliers* (which
-  is automatically created upon module installation).
-- Check that this payment method uses the proper version of PAIN.
+-  Create a Payment Mode dedicated to SEPA Credit Transfer.
+
+-  Select the Payment Method *SEPA Credit Transfer to suppliers* (which
+   is automatically created upon module installation).
+
+-  Check that this payment method uses the proper version of PAIN.
+
+\*\* PAIN.001.001.09 address handling \*\*
+
+When using format **pain.001.001.09**, the address block is no longer
+generated using the legacy unstructured format, as this is invalid
+according to the official schema.
+
+You must configure the field “PAIN.001.001.09 Address Mode” on the
+payment method:
+
+-  | **Minimal (City + Country)**
+   | Generates only the mandatory structured elements ``TwnNm`` and
+     ``Ctry``.
+
+-  | **Hybrid (City/Country + AdrLine)**
+   | Generates ``TwnNm`` and ``Ctry``, plus optional ``AdrLine``
+     elements for street data.
+
+If no address mode is selected, the default is **Minimal**, which is
+fully schema-compliant.
+
+Older PAIN formats (``pain.001.001.03``, ``.04``, ``.05``, etc.) are
+unaffected.
 
 Usage
 =====
@@ -94,37 +115,50 @@ Authors
 
 * Akretion
 * Tecnativa
+* Therp BV
 
 Contributors
 ------------
 
-- Alexis de Lattre <alexis.delattre@akretion.com>
-- Stéphane Bidoul <stephane.bidoul@acsone.eu>
-- Stefan Rijnhart
-- Julien Laloux
-- Alexandre Fayolle
-- Raphaël Valyi
-- Erwin van der Ploeg
-- Sandy Carter
-- `Tecnativa <https://www.tecnativa.com>`__:
+-  Alexis de Lattre alexis.delattre@akretion.com
 
-  - Antonio Espinosa
-  - Pedro M. Baeza
-  - Carlos Roca
+-  Stéphane Bidoul stephane.bidoul@acsone.eu
 
-- `DynApps NV <https://www.dynapps.be>`__:
+-  Stefan Rijnhart
 
-  - Axel Priem <axel.priem@dynapps.be>
+-  Julien Laloux
 
-- `Sygel Technology <https://www.sygel.es>`__:
+-  Alexandre Fayolle
 
-  - Valentin Vinagre <valentin.vinagre@sygel.es>
-  - Manuel Regidor <manuel.regidor@sygel.es>
+-  Raphaël Valyi
 
-- `Trobz <https://trobz.com>`__:
+-  Erwin van der Ploeg
 
-  - Dung Tran <dungtd@trobz.com>
-  - Tris Doan <tridm@trobz.com>
+-  Sandy Carter
+
+-  `Tecnativa <https://www.tecnativa.com>`__:
+
+   -  Antonio Espinosa
+   -  Pedro M. Baeza
+   -  Carlos Roca
+
+-  `DynApps NV <https://www.dynapps.be>`__:
+
+   -  Axel Priem axel.priem@dynapps.be
+
+-  `Sygel Technology <https://www.sygel.es>`__:
+
+   -  Valentin Vinagre valentin.vinagre@sygel.es
+   -  Manuel Regidor manuel.regidor@sygel.es
+
+-  `Trobz <https://trobz.com>`__:
+
+   -  Dung Tran dungtd@trobz.com
+   -  Tris Doan tridm@trobz.com
+
+-  `Therp BV <https://www.therp.nl>`__:
+
+   -  Nikos Tsirintanis ntsirintanis@therp.nl
 
 Other credits
 -------------
