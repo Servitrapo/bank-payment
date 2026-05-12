@@ -24,7 +24,7 @@ addon | version | maintainers | summary
 [account_banking_mandate](account_banking_mandate/) | 19.0.1.0.0 |  | Banking mandates
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds mandates on sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 19.0.1.0.0 |  | Base module for PAIN file generation
-[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 19.0.1.0.0 |  | Create SEPA files for Direct Debit
+[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 19.0.1.1.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 19.0.1.0.3 |  | Adds payment mode on partners and invoices
 [account_payment_order](account_payment_order/) | 19.0.1.0.1 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 19.0.1.0.0 |  | Account Payment Order - Generate grouped moves
