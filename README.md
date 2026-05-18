@@ -29,6 +29,7 @@ addon | version | maintainers | summary
 [account_payment_order](account_payment_order/) | 19.0.1.0.2 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 19.0.1.0.0 |  | Account Payment Order - Generate grouped moves
 [account_payment_purchase](account_payment_purchase/) | 19.0.1.0.0 |  | Adds Bank Account and Payment Mode on Purchase Orders
+[account_payment_purchase_stock](account_payment_purchase_stock/) | 19.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
 [account_payment_sale](account_payment_sale/) | 19.0.1.0.1 |  | Adds payment mode on sale orders
 
 [//]: # (end addons)
