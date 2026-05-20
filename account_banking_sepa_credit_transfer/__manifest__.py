@@ -1,13 +1,13 @@
 # Copyright 2010-2020 Akretion (www.akretion.com)
 # Copyright 2016 Tecnativa - Antonio Espinosa
-# Copyright 2016-2022 Tecnativa - Pedro M. Baeza
 # Copyright 2026 Therp BV <https://therp.nl>.
+# Copyright 2016,2022,2026 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html)
 
 {
     "name": "Account Banking SEPA Credit Transfer",
     "summary": "Create SEPA XML files for Credit Transfers",
-    "version": "18.0.1.1.0",
+    "version": "19.0.1.0.0",
     "license": "AGPL-3",
     "author": "Akretion, Tecnativa, Therp BV, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/bank-payment",
