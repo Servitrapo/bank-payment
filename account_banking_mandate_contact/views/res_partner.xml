@@ -4,7 +4,7 @@
         <field name="model">res.partner</field>
         <field
             name="inherit_id"
-            ref="account_payment_partner.view_partner_property_form"
+            ref="account_payment_mode.view_partner_property_form"
         />
         <field name="arch" type="xml">
             <field name="customer_payment_mode_id" position="after">

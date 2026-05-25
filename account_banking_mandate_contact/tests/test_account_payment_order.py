@@ -11,7 +11,6 @@ class TestAccountPaymentOrder(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.partner = cls.env["res.partner"].create({"name": "Test Partner"})
         cls.product = cls.env["product.product"].create({"name": "Test product"})
         cls.partner_bank_core = cls._create_res_partner_bank("N-CORE")
         cls.mandate_core = cls._create_mandate(cls.partner_bank_core, "CORE")
