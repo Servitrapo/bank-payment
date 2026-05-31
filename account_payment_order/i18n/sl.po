@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-01 15:18+0000\n"
-"PO-Revision-Date: 2026-05-30 09:38+0000\n"
+"PO-Revision-Date: 2026-05-31 17:05+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -104,8 +104,8 @@ msgid ""
 "Activate this option if this payment method requires you to know the bank "
 "account number of your customer or supplier."
 msgstr ""
-"To možnost aktivirajte, če ta metoda plačila zahteva, da poznate številko "
-"bančnega računa svoje stranke ali dobavitelja."
+"Vključite to možnost, če ta način plačila zahteva, da poznate številko "
+"bančnega računa svojega kupca ali dobavitelja."
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__activity_ids
@@ -957,7 +957,7 @@ msgstr "Način plačila na računu"
 #. module: account_payment_order
 #: model:ir.model,name:account_payment_order.model_account_payment_mode
 msgid "Payment Modes"
-msgstr "Načini plačila"
+msgstr "Načini plačil"
 
 #. module: account_payment_order
 #: model:ir.actions.report,name:account_payment_order.action_print_payment_order
@@ -1267,7 +1267,7 @@ msgstr "Datum valute"
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_line_tree
 msgid "View"
-msgstr "Pogled"
+msgstr "Prikaz"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__website_message_ids
