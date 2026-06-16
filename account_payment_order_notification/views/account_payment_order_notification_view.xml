@@ -45,7 +45,7 @@
             <search>
                 <field name="order_id" invisible="1" />
                 <field name="partner_id" />
-                <group string="Group By" name="groupby">
+                <group name="groupby">
                     <filter
                         name="order_id"
                         string="Payment Order"

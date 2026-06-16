@@ -9,7 +9,14 @@ class TestAccountPaymentOrderNotification(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.payment_mode = cls.env.ref("account_payment_mode.payment_mode_inbound_dd1")
+        payment_method_manual = cls.env.ref("account.account_payment_method_manual_in")
+        cls.payment_mode = cls.env["account.payment.mode"].create(
+            {
+                "name": "Direct Debit of customers",
+                "bank_account_link": "variable",
+                "payment_method_id": payment_method_manual.id,
+            }
+        )
         cls.partner_a = cls.env["res.partner"].create({"name": "Test partner A"})
         cls.partner_a_child = cls.env["res.partner"].create(
             {

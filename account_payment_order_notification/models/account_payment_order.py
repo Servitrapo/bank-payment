@@ -1,7 +1,7 @@
 # Copyright 2022 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class AccountPaymentOrder(models.Model):
@@ -16,11 +16,14 @@ class AccountPaymentOrder(models.Model):
         string="Notification count", compute="_compute_notification_count"
     )
 
+    @api.depends("notification_ids")
     def _compute_notification_count(self):
-        notification_data = self.env["account.payment.order.notification"].read_group(
-            [("order_id", "in", self.ids)], ["order_id"], ["order_id"]
+        res = self.env["account.payment.order.notification"]._read_group(
+            domain=[("order_id", "in", self.ids)],
+            groupby=["order_id"],
+            aggregates=["__count"],
         )
-        mapped_data = {r["order_id"][0]: r["order_id_count"] for r in notification_data}
+        mapped_data = {group[0].id: group[1] for group in res if group[0]}
         for record in self:
             record.notification_count = mapped_data.get(record.id, 0)
 
@@ -39,7 +42,8 @@ class AccountPaymentOrder(models.Model):
             notification.message_post_with_source(template)
 
     def _action_create_note_from_notifications(self):
-        body = self.env._("Email has been sent to the following partners: %s") % (
-            ", ".join(self.mapped("notification_ids.partner_id.name"))
+        body = self.env._(
+            "Email has been sent to the following partners: %s",
+            ", ".join(self.mapped("notification_ids.partner_id.name")),
         )
         self.message_post(body=body)
