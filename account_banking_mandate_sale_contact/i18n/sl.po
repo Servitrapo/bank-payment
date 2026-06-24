@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-06-24 08:08+0000\n"
+"PO-Revision-Date: 2026-06-24 10:46+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: none\n"
 "Language: sl\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:account_banking_mandate_sale_contact.selection__res_company__sale_default_mandate_contact__commercial_partner_id
 #: model:ir.model.fields.selection,name:account_banking_mandate_sale_contact.selection__res_partner__sale_default_mandate_contact__commercial_partner_id
 msgid "Commercial Customer Mandate"
-msgstr ""
+msgstr "Mandat poslovnega partnerja"
 
 #. module: account_banking_mandate_sale_contact
 #: model:ir.model,name:account_banking_mandate_sale_contact.model_res_company
@@ -42,7 +42,7 @@ msgstr "Stik"
 #: model:ir.model.fields.selection,name:account_banking_mandate_sale_contact.selection__res_company__sale_default_mandate_contact__partner_id
 #: model:ir.model.fields.selection,name:account_banking_mandate_sale_contact.selection__res_partner__sale_default_mandate_contact__partner_id
 msgid "Customer Mandate"
-msgstr ""
+msgstr "Mandat kupca"
 
 #. module: account_banking_mandate_sale_contact
 #: model:ir.model.fields,field_description:account_banking_mandate_sale_contact.field_res_company__sale_default_mandate_contact
@@ -50,19 +50,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_banking_mandate_sale_contact.field_res_partner__sale_default_mandate_contact
 #: model:ir.model.fields,field_description:account_banking_mandate_sale_contact.field_res_users__sale_default_mandate_contact
 msgid "Default Sale Mandate Contact"
-msgstr ""
+msgstr "Privzeti stik prodajnega mandata"
 
 #. module: account_banking_mandate_sale_contact
 #: model:ir.model.fields.selection,name:account_banking_mandate_sale_contact.selection__res_company__sale_default_mandate_contact__partner_shipping_id
 #: model:ir.model.fields.selection,name:account_banking_mandate_sale_contact.selection__res_partner__sale_default_mandate_contact__partner_shipping_id
 msgid "Delivery Address Mandate"
-msgstr ""
+msgstr "Mandat naslova za dostavo"
 
 #. module: account_banking_mandate_sale_contact
 #: model:ir.model.fields.selection,name:account_banking_mandate_sale_contact.selection__res_company__sale_default_mandate_contact__partner_invoice_id
 #: model:ir.model.fields.selection,name:account_banking_mandate_sale_contact.selection__res_partner__sale_default_mandate_contact__partner_invoice_id
 msgid "Invoice Address Mandate"
-msgstr ""
+msgstr "Mandat naslova za račun"
 
 #. module: account_banking_mandate_sale_contact
 #: model:ir.model,name:account_banking_mandate_sale_contact.model_sale_order
@@ -80,6 +80,18 @@ msgid ""
 "- Delivery Address Mandate: Odoo will look the mandate in the sale delivery address\n"
 "- False: Odoo will use the first mandate he founds for the partner company. Odoo will also use this option if no default mandate is found in the partner of the above options"
 msgstr ""
+"Stik te družbe, pri katerem bo Odoo pri prodaji iskal mandat\n"
+"- Mandat kupca: Odoo bo mandat poiskal pri prodajnem partnerju, ne glede na "
+"to, ali gre za posameznika ali družbo\n"
+"- Mandat poslovnega partnerja: Odoo bo mandat poiskal pri družbi prodajnega "
+"partnerja\n"
+"- Mandat naslova za račun: Odoo bo mandat poiskal na prodajnem naslovu za "
+"račun\n"
+"- Mandat naslova za dostavo: Odoo bo mandat poiskal na prodajnem naslovu za "
+"dostavo\n"
+"- False: Odoo bo uporabil prvi mandat, ki ga najde za družbo partnerja. Odoo "
+"bo to možnost uporabil tudi, če pri partnerju iz zgornjih možnosti ni "
+"najdenega privzetega mandata"
 
 #. module: account_banking_mandate_sale_contact
 #: model_terms:ir.ui.view,arch_db:account_banking_mandate_sale_contact.res_config_settings_view_form_inherit_sale_default_mandates
@@ -91,11 +103,20 @@ msgid ""
 "-Delivery Address Mandate: Odoo will look the mandate in the sale delivery address. \r"
 "-False: Odoo will use the first mandate he founds for the partner company. Odoo will also use this option if no default mandate is found in the partner of the above options"
 msgstr ""
+"Stik te družbe, pri katerem bo Odoo pri prodaji iskal mandat. \r-Mandat "
+"kupca: Odoo bo mandat poiskal pri prodajnem partnerju, ne glede na to, ali "
+"gre za posameznika ali družbo. \r-Mandat poslovnega partnerja: Odoo bo "
+"mandat poiskal pri družbi prodajnega partnerja. \r-Mandat naslova za račun: "
+"Odoo bo mandat poiskal na prodajnem naslovu za račun. \r-Mandat naslova za "
+"dostavo: Odoo bo mandat poiskal na prodajnem naslovu za dostavo. \r-False: "
+"Odoo bo uporabil prvi mandat, ki ga najde za družbo partnerja. Odoo bo to "
+"možnost uporabil tudi, če pri partnerju iz zgornjih možnosti ni najdenega "
+"privzetega mandata"
 
 #. module: account_banking_mandate_sale_contact
 #: model_terms:ir.ui.view,arch_db:account_banking_mandate_sale_contact.res_config_settings_view_form_inherit_sale_default_mandates
 msgid "The partner of the sales in which odoo will search for the mandate"
-msgstr ""
+msgstr "Prodajni partner, pri katerem bo Odoo iskal mandat"
 
 #. module: account_banking_mandate_sale_contact
 #: model:ir.model.fields,help:account_banking_mandate_sale_contact.field_res_partner__sale_default_mandate_contact
@@ -108,3 +129,13 @@ msgid ""
 "- Delivery Address Mandate: Odoo will look the mandate in the sale delivery address\n"
 "- False: Odoo will use the company configuration option"
 msgstr ""
+"Prodajni partner, pri katerem bo Odoo iskal mandat\n"
+"- Mandat kupca: Odoo bo mandat poiskal pri prodajnem partnerju, ne glede na "
+"to, ali gre za posameznika ali družbo\n"
+"- Mandat poslovnega partnerja: Odoo bo mandat poiskal pri družbi prodajnega "
+"partnerja\n"
+"- Mandat naslova za račun: Odoo bo mandat poiskal na prodajnem naslovu za "
+"račun\n"
+"- Mandat naslova za dostavo: Odoo bo mandat poiskal na prodajnem naslovu za "
+"dostavo\n"
+"- False: Odoo bo uporabil možnost konfiguracije družbe"
