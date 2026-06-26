@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-06-26 07:55+0000\n"
+"PO-Revision-Date: 2026-06-26 10:46+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: none\n"
 "Language: sl\n"
@@ -20,7 +20,7 @@ msgstr ""
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__can_review
 msgid "Can Review"
-msgstr "Lahko revidira"
+msgstr "Lahko pregleda"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__has_comment
@@ -30,32 +30,32 @@ msgstr "Ima komentar"
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__hide_reviews
 msgid "Hide Reviews"
-msgstr ""
+msgstr "Skrij preglede"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,help:account_payment_order_tier_validation.field_account_payment_order__has_comment
 msgid "If set, Allow the reviewer to leave a comment on the review."
-msgstr ""
+msgstr "Če je nastavljeno, dovoli pregledovalcu pustiti komentar pri pregledu."
 
 #. module: account_payment_order_tier_validation
 #: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
 msgid "My Payment Orders to review"
-msgstr ""
+msgstr "Moji plačilni nalogi za pregled"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__need_validation
 msgid "Need Validation"
-msgstr ""
+msgstr "Potrebuje potrditev"
 
 #. module: account_payment_order_tier_validation
 #: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
 msgid "Needs my Review"
-msgstr ""
+msgstr "Potrebuje moj pregled"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__next_review
 msgid "Next Review"
-msgstr ""
+msgstr "Naslednji pregled"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model,name:account_payment_order_tier_validation.model_account_payment_order
@@ -65,7 +65,7 @@ msgstr "Plačilni nalog"
 #. module: account_payment_order_tier_validation
 #: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
 msgid "Payment Orders validated and ready to be confirmed"
-msgstr ""
+msgstr "Plačilni nalogi so potrjeni in pripravljeni na potrditev"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__rejected
@@ -75,22 +75,22 @@ msgstr "Zavrnjeno"
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__rejected_message
 msgid "Rejected Message"
-msgstr ""
+msgstr "Sporočilo zavrnitve"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__reviewer_ids
 msgid "Reviewers"
-msgstr ""
+msgstr "Pregledovalci"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model,name:account_payment_order_tier_validation.model_tier_definition
 msgid "Tier Definition"
-msgstr ""
+msgstr "Definicija nivoja"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__to_validate_message
 msgid "To Validate Message"
-msgstr ""
+msgstr "Sporočilo za potrditev"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__validated
@@ -101,14 +101,14 @@ msgstr "Potrjeno"
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__validated_message
 msgid "Validated Message"
-msgstr ""
+msgstr "Sporočilo potrditve"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__validation_status
 msgid "Validation Status"
-msgstr ""
+msgstr "Stanje potrditve"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__review_ids
 msgid "Validations"
-msgstr ""
+msgstr "Potrditve"
