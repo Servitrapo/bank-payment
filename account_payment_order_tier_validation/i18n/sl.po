@@ -6,7 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-06-26 07:55+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: none\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -14,16 +15,17 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__can_review
 msgid "Can Review"
-msgstr ""
+msgstr "Lahko revidira"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__has_comment
 msgid "Has Comment"
-msgstr ""
+msgstr "Ima komentar"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__hide_reviews
@@ -58,7 +60,7 @@ msgstr ""
 #. module: account_payment_order_tier_validation
 #: model:ir.model,name:account_payment_order_tier_validation.model_account_payment_order
 msgid "Payment Order"
-msgstr ""
+msgstr "Plačilni nalog"
 
 #. module: account_payment_order_tier_validation
 #: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
@@ -68,7 +70,7 @@ msgstr ""
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__rejected
 msgid "Rejected"
-msgstr ""
+msgstr "Zavrnjeno"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__rejected_message
@@ -94,7 +96,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__validated
 #: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
 msgid "Validated"
-msgstr ""
+msgstr "Potrjeno"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__validated_message
