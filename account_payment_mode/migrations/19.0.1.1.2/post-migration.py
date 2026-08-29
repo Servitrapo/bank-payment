@@ -65,6 +65,51 @@ def migrate(env, version):
             bool(secret_key),
         )
 
+        # Keep a durable copy until the end-migration stage.
+        #
+        # The native Odoo 19 payment_redsys module is loaded later in the
+        # upgrade and its model/schema reconciliation can clear the values
+        # restored during this post-migration.
+        #
+        # Values are NEVER logged.
+        cr.execute(
+            '''
+            ALTER TABLE payment_provider
+                ADD COLUMN IF NOT EXISTS
+                    servitrapo_mig_redsys_merchant_code varchar,
+                ADD COLUMN IF NOT EXISTS
+                    servitrapo_mig_redsys_terminal varchar,
+                ADD COLUMN IF NOT EXISTS
+                    servitrapo_mig_redsys_secret_key varchar
+            '''
+        )
+
+        cr.execute(
+            '''
+            UPDATE payment_provider
+               SET servitrapo_mig_redsys_merchant_code = %s,
+                   servitrapo_mig_redsys_terminal = %s,
+                   servitrapo_mig_redsys_secret_key = %s
+             WHERE id = %s
+            ''',
+            (
+                merchant_code,
+                merchant_terminal,
+                secret_key,
+                historical_provider_id,
+            ),
+        )
+
+        _logger.info(
+            "Historical Redsys credentials backed up for end-migration: "
+            "provider=%s, merchant_present=%s, terminal_present=%s, "
+            "secret_present=%s",
+            historical_provider_id,
+            bool(merchant_code),
+            bool(merchant_terminal),
+            bool(secret_key),
+        )
+
         # Odoo 19 replaces redsys_terminal with
         # redsys_merchant_terminal.
         cr.execute(
